@@ -24,18 +24,22 @@ ul li{
 .footer-btm{
     width: 100%;
     text-align: center;
+    height: 53px;
+    line-height: 53px;
 }
 .footer{
     background: rgba(51, 51, 51, 1);
     font-size: 8px;
     color: #fff;
+    box-sizing: border-box;
+    padding: 0 10px;
 }
 .global-footer {
     font-size: 8px;
     width: 1200px;
-    height: 146px;
+    height: 100px;
     margin: 0 auto;
-    padding: 10px 0;
+    padding: 30px 0;
     border-bottom: 1px solid rgba(82,82,82,1);
     display: flex;
 }
@@ -47,7 +51,7 @@ ul li{
 }
 .global-footer .footer-title{
     font-size:15px;
-    padding: 12px 0;
+    padding-bottom: 18px;
 }
 .footerMiddle-btm  li{
     float: left;
@@ -78,6 +82,12 @@ ul li{
     .footerBtm-img{
         width: 40px;
         height: 40px;
+    }
+    .global-footer{
+        padding: 10px 0;
+    }
+    .footerMiddle-btm li{
+        padding-right: 5px;
     }
 }
 .col-xs-5{

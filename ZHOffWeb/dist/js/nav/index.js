@@ -5,8 +5,7 @@
     let btn = document.getElementsByClassName("btn")[0];
     let navView = document.getElementsByClassName("right_nav")[0];
     let flag = true;
-        btn.ontouchstart=function(){
-            void 0
+        btn.onclick=function(){
             if(flag){
                 flag =false;
                 navView.style.height = navHeight+"px";

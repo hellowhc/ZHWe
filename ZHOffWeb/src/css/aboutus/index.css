@@ -3,6 +3,7 @@
     margin: 0px;
     list-style: none;
     text-decoration: none;
+    font-family:MicrosoftYaHei;
 }
 
 main {
@@ -63,31 +64,32 @@ main {
     font-weight: 400;
     color: rgba(27, 46, 69, 1);
 }
-.subscr dl dt p{
-    width: 100%;
-    text-align: center;
-    /* line-height: 30px; */
-    border: 1px solid black;
-}
-.subscr dl dt:nth-of-type(2) {
+
+.subscr ul li:nth-of-type(2) {
     font-size: 24px;
     font-weight: 400;
     color: rgba(131, 136, 152, 1);
+    margin-top: 12px;
 }
 
-.subscr dl dd {
-    white-space: pre;
+.subscr ul li:nth-of-type(3) {
+    margin-top: 34px;
+    margin-bottom: 50px;
+}
+
+.subscr ul li:nth-of-type(3) p {
     font-size: 16px;
     font-weight: 400;
     color: rgba(131, 136, 151, 1);
-    /* line-height: 36px; */
+    line-height: 36px;
+
 }
 
 .subscr .subscr_img {
     width: 100%;
     height: 624px;
     text-align: center;
-    position: relative;
+    position: absolute;
 }
 
 .subscr .subscr_img img {
@@ -95,7 +97,42 @@ main {
     height: 381px;
     width: 383px;
 }
-
+.subscr .subscr_box .box_active{
+    transform: translateY(-34px) translateX(-100px) rotateZ(45deg);
+}
+.subscr .subscr_img_box{
+    width: 100%;
+    height: 624px;
+    text-align: center;
+    position: relative;
+}
+.subscr .subscr_box {
+    width: 100%;
+    height: 624px;
+    text-align: center;
+    position: absolute;
+    top: 57px;
+}
+.subscr .subscr_box p{
+    display: inline-block;
+    margin-left: 173px;
+    height: 270px;
+    width: 270px;
+    transform: translateX(-100px) rotateZ(45deg);
+    border: 2px solid #656974;
+}
+.subscr .subscr_box .bottom_box {
+    position: absolute;
+    bottom: 107px;
+    width: 100%;
+    text-align: center;
+}
+.subscr .subscr_box .bottom_box p{
+    margin-left: 155px;
+}
+.subscr .subscr_box .bottom_box p:nth-of-type(1){
+    transform: translateX(-82px) rotateZ(45deg)
+}
 .subscr .subscr_img .bottom_img {
     position: absolute;
     bottom: 32px;
@@ -141,7 +178,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 .subscr .subCont ul li .subConImg {
@@ -158,24 +195,20 @@ main {
     width: 272px;
     height: 386px;
     display: flex;
-    /* align-items: center; */
     flex-direction: column;
     justify-content: center;
 }
 
 .subscr .subCont ul li .subConImg_sub p {
     width: 100%;
-    height: 250px;
+    max-height: 250px;
     font-size: 16px;
     font-weight: 400;
     color: rgba(131, 136, 151, 1);
     line-height: 36px;
     text-align: left;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 6;
     overflow: hidden;
+    margin-top: 20px;
 }
 
 .subscr .subCont ul li .subConImg_sub h2 {
@@ -190,7 +223,6 @@ main {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
     overflow: hidden;
-
 }
 
 .subscr .subCont ul li.teshu {
@@ -204,14 +236,12 @@ main {
 .subscr .subCont ul li.teshu .subConImg {
     height: 394px;
     width: 285px;
-    border: 1px dashed #000;
     margin-left: 80px;
 }
 
 .subscr .subCont ul li.teshu .subConImg img {
     width: 285px;
     height: 394px;
-
 }
 
 .subscr .subCont ul li.teshu .subConImg_sub {
@@ -222,36 +252,39 @@ main {
 
 .subscr .subCont ul li.teshu .subConImg_sub p {
     font-size: 16px;
-    font-family: MicrosoftYaHei;
     font-weight: 400;
     color: rgba(131, 136, 151, 1);
-    line-height: 36px;
+    line-height: 18px;
     width: 100%;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 6;
-    overflow: hidden;
 }
 
 .subscr .subCont .subContent .case_show {
-    margin-top: 161px;
+    margin-top: 120px;
+}
+
+.subscr .subCont .subContent .gongsi li:nth-of-type(2) .subConImg_sub h2 {
+    text-align: left;
+}
+.subscr .subCont .subContent .gongsi{
+    margin-top: 61px;
+}
+.subscr .subCont .subContent .gongsi li {
+    margin-bottom: 60px;
 }
 
 .subscr .subCont .subContent .case_show ul li {
     width: 100%;
     /* height: 800px; */
-    height: 610px;
+    height: 340px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 100px;
 }
 
 .subscr .subCont .subContent .case_show ul li .subConImg {
-    height: 457px;
-    width: 610px;
-    border: 1px dashed #000;
+    width: 600px;
+    height: 340px;
 }
 
 .subscr .subCont .subContent .case_show ul li .subConImg img {
@@ -260,36 +293,36 @@ main {
 }
 
 .subscr .subCont .subContent .case_show ul li .subConImg_sub {
-    width: 272px;
-    height: 386px;
+    flex: 1;
+    padding-left: 100px;
+
+    box-sizing: border-box;
     display: flex;
-    /* align-items: center; */
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 /* 部分作品展示的特殊几个处理 */
 
-.subscr .subCont .subContent .case_show ul li:nth-of-type(2) .subConImg,
-.subscr .subCont .subContent .case_show ul li:nth-of-type(4) .subConImg {
-    height: 391px;
-    width: 699px;
+.subscr .subCont .subContent .case_show ul li:nth-of-type(2) .subConImg_sub,
+.subscr .subCont .subContent .case_show ul li:nth-of-type(4) .subConImg_sub {
+    padding-left: 0px;
+    padding-right: 100px;
 }
 
 .subscr .subCont .subContent .case_show ul li .subConImg_sub p {
     width: 100%;
-    height: 250px;
+    max-height: 250px;
+    height: auto;
     font-size: 16px;
     font-weight: 400;
     color: rgba(131, 136, 151, 1);
     line-height: 36px;
     text-align: left;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 6;
-    overflow: hidden;
-    margin-top: 39px;
+    white-space: normal;
+    margin-top: 20px;
+
 }
 
 .subscr .subCont .subContent .case_show ul li .subConImg_sub h2 {
@@ -300,9 +333,6 @@ main {
     font-weight: 400;
     color: rgba(27, 46, 69, 1);
     line-height: 36px;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 1;
     overflow: hidden;
 }
 
@@ -317,7 +347,8 @@ main {
     height: 513px;
     position: relative;
 }
-.subscr .subCont .subContent .Cooper .Cooper_img img{
+
+.subscr .subCont .subContent .Cooper .Cooper_img img {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -332,35 +363,42 @@ main {
     .main_img {
         margin-top: 60px;
         width: 100%;
-        /* height: 540px; */
-        /* height: 340px; */
         height: 330px;
         position: relative;
-        /* padding-bottom: 56%; */
+    }
+    .subscr .subscr_img_box{
+        height: 324px;
+    }
+    .subscr_box{
+        display: none;
     }
     .main_img img {
         width: 100%;
         height: 100%;
     }
+
     .main_img h1 {
         font-size: 40px;
         /* margin-top: 30px; */
         /* margin-top: 43%; */
     }
+
     .main_img p {
         font-size: 28px;
-        /* margin-top: 30px; */
-        /* margin-top: 40%; */
     }
 
     /* 改变公司简介的文字的大小 */
-    .subscr dl dd {
-        white-space: pre;
+    .subscr ul li:nth-of-type(3){
+        padding: 0px 10px;
+
+    }
+    .subscr ul li:nth-of-type(3) p {
+        width: 100%;
         font-size: 14px;
         font-weight: 400;
         color: rgba(131, 136, 151, 1);
         line-height: 36px;
-        white-space: pre-wrap;
+        white-space: normal;
     }
 
     .subscr .subscr_img {
@@ -413,7 +451,6 @@ main {
         display: flex;
         flex-direction: column;
         justify-content: center;
-
     }
 
     .subscr .subCont ul li .subConImg_sub p {
@@ -424,17 +461,13 @@ main {
         color: rgba(131, 136, 151, 1);
         line-height: 36px;
         text-align: left;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 6;
-        overflow: hidden;
     }
 
     /* 特殊处理 */
+
     .subscr .subCont ul li.teshu {
         width: 100%;
-        height: 330px;
+        height: 320px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -443,7 +476,6 @@ main {
     .subscr .subCont ul li.teshu .subConImg {
         height: 100%;
         width: 215px;
-        border: 1px dashed #000;
         margin-left: 5%;
     }
 
@@ -464,11 +496,9 @@ main {
         color: rgba(131, 136, 151, 1);
         line-height: 18px;
         width: 100%;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 3;
-        overflow: hidden;
+        height: auto;
+        white-space: normal;
+        margin: 0px;
     }
 
     /* 部分案例展示的处理 */
@@ -498,7 +528,7 @@ main {
     .subscr .subCont .subContent .case_show ul li .subConImg {
         height: 100%;
         width: 65%;
-        border: 1px dashed #000;
+        
     }
 
     .subscr .subCont .subContent .case_show ul li .subConImg img {
@@ -512,9 +542,12 @@ main {
         display: flex;
         flex-direction: column;
         justify-content: center;
-
+        padding-left: 10px;
     }
-
+    .subscr .subCont .subContent .case_show ul li:nth-of-type(2) .subConImg_sub,
+    .subscr .subCont .subContent .case_show ul li:nth-of-type(4) .subConImg_sub {
+        padding-right: 10px;
+    }
 
     .subscr .subCont .subContent .case_show ul li:nth-of-type(2) .subConImg,
     .subscr .subCont .subContent .case_show ul li:nth-of-type(4) .subConImg {
@@ -552,21 +585,24 @@ main {
         overflow: hidden;
         margin-top: 45%;
     }
+
     /* 关于合作伙伴 */
 
-    .subscr .subCont .subContent .Cooper{
+    .subscr .subCont .subContent .Cooper {
         width: 100%;
         box-sizing: border-box;
         margin-top: 60px;
     }
-    .subscr .subCont .subContent .Cooper .Cooper_img{
+
+    .subscr .subCont .subContent .Cooper .Cooper_img {
         box-sizing: border-box;
         margin-top: 30px;
-        width:100%;
+        width: 100%;
         position: relative;
         padding-bottom: 56%;
     }
-    .subscr .subCont .subContent .Cooper .Cooper_img img{
+
+    .subscr .subCont .subContent .Cooper .Cooper_img img {
         width: 100%;
         height: 100%;
         position: absolute;
@@ -576,15 +612,21 @@ main {
         right: 0px;
     }
 
-    
+
 }
 
 /* 超小手机适配 */
-@media screen and (max-width : 769px){
-    header{
-        background:#000;
+@media screen and (max-width : 769px) {
+    header {
+        background: #000;
     }
-        .main_img {
+    .subscr .subscr_img_box{
+        height: 184px;
+    }
+    .subscr_box{
+        display: none;
+    }
+    .main_img {
         margin-top: 60px;
         width: 100%;
         height: 230px;
@@ -592,29 +634,30 @@ main {
         position: relative;
         /* padding-bottom: 56%; */
     }
-    .main_img img{
+
+    .main_img img {
         position: absolute;
         width: 100%;
         height: 100%;
     }
+
     .main_img h1 {
         font-size: 40px;
 
     }
+
     .main_img p {
         font-size: 28px;
-
     }
 
 
     /* 改变公司简介的文字的大小 */
     .subscr dl dd {
-        white-space: pre;
         font-size: 14px;
         font-weight: 400;
         color: rgba(131, 136, 151, 1);
-        white-space: pre-line;
     }
+
     .subscr .subscr_img {
         width: 100%;
         height: 180px;
@@ -626,6 +669,7 @@ main {
         height: 100px;
         width: 100px;
     }
+
     .subscr .subscr_img .bottom_img {
         position: absolute;
         bottom: 0px;
@@ -658,6 +702,7 @@ main {
         width: 100%;
         height: 100%;
     }
+
     .subscr .subCont ul li .subConImg_sub {
         width: 30%;
         height: 100%;
@@ -665,10 +710,13 @@ main {
         flex-direction: column;
         justify-content: center;
     }
-    .subscr .subCont ul li.shengxian .subConImg{
+
+
+    .subscr .subCont ul li.shengxian .subConImg {
         height: 150px !important;
         margin-top: 20px;
     }
+
     .subscr .subCont ul li .subConImg_sub p {
         width: 100%;
         height: 100px;
@@ -687,9 +735,26 @@ main {
     }
 
     /* 特殊处理 */
+    .subscr .subCont .subContent .gongsi{
+        margin-top: 20px;
+    }
+    .subscr .subCont .subContent .gongsi li:nth-of-type(2){
+        height: 230px;
+    }
+    .subscr .subCont .subContent .gongsi li:nth-of-type(2) .subConImg_sub {
+        width: 150px;
+        padding-right: 10px;
+    }
+    .subscr .subCont .subContent .gongsi li:nth-of-type(2) .subConImg_sub p {
+        width: 150px;
+        height: 240px;
+    }
+    .subscr .subCont .subContent .gongsi li:nth-of-type(2) .subConImg{
+        height: 150px;
+    }
     .subscr .subCont ul li.teshu {
         width: 100%;
-        height: 270px;
+        height: 370px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -698,7 +763,6 @@ main {
     .subscr .subCont ul li.teshu .subConImg {
         height: 100%;
         width: 180px;
-        border: 1px dashed #000;
         margin-left: 0px;
     }
 
@@ -717,13 +781,11 @@ main {
         font-size: 14px;
         font-weight: 400;
         color: rgba(131, 136, 151, 1);
-        line-height: 14px;
+        line-height: 18px;
         width: 100%;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 3;
-        overflow: hidden;
+        height: auto;
+        white-space: normal;
+        margin:0px;
     }
 
     /* 部分案例展示的处理 */
@@ -753,7 +815,6 @@ main {
     .subscr .subCont .subContent .case_show ul li .subConImg {
         height: 100%;
         width: 65%;
-        border: 1px dashed #000;
     }
 
     .subscr .subCont .subContent .case_show ul li .subConImg img {
@@ -775,15 +836,18 @@ main {
         height: 100%;
         width: 65%;
     }
+
     /* 对部分案例展示的第四个做处理 */
     .subscr .subCont .subContent .case_show ul li:nth-of-type(4) .subConImg {
         height: 98%;
         width: 57%;
     }
+
     .subscr .subCont .subContent .case_show ul li:nth-of-type(4) .subConImg_sub {
         height: 100%;
         width: 40%;
     }
+
     .subscr .subCont .subContent .case_show ul li .subConImg_sub p {
         width: 100%;
         max-height: 200px;
@@ -813,21 +877,24 @@ main {
         overflow: hidden;
         margin-top: 10px;
     }
+
     /* 关于合作伙伴 */
 
-    .subscr .subCont .subContent .Cooper{
+    .subscr .subCont .subContent .Cooper {
         width: 100%;
         box-sizing: border-box;
         margin-top: 60px;
     }
-    .subscr .subCont .subContent .Cooper .Cooper_img{
+
+    .subscr .subCont .subContent .Cooper .Cooper_img {
         box-sizing: border-box;
         margin-top: 30px;
-        width:100%;
+        width: 100%;
         position: relative;
         padding-bottom: 56%;
     }
-    .subscr .subCont .subContent .Cooper .Cooper_img img{
+
+    .subscr .subCont .subContent .Cooper .Cooper_img img {
         width: 100%;
         height: 100%;
         position: absolute;

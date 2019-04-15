@@ -23,7 +23,7 @@ header .container {
     align-items: center;
 }
 header .container .left_nav {
-    width: 320px;
+    width: 350px;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -39,13 +39,17 @@ header .container .left_nav img {
     height: 61px;
 }
 header .container .left_nav .subsc {
-    width: 250px;
+    width: 290px;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-size: 24px;
     color: #666666;
+    margin-left: 12px;
+}
+header .container .left_nav .subsc p:nth-of-type(1){
+    letter-spacing: 1px;
 }
 header .container .left_nav .subsc p:nth-of-type(2) {
     font-size: 11px;

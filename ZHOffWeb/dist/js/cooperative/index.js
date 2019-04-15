@@ -1,14 +1,11 @@
-(function(){
-    window.onload= function(){
-        let cooperImg = document.getElementsByClassName("cooperImg")[0]
-        window.onresize=function(){
-            void 0
-            if(document.documentElement.clientWidth<200){
-                cooperImg.src="../image/cooperMinImg.png";
-                void 0
+(function () {
+    window.onload = function () {
+        let cooperImg = document.getElementsByClassName("cooperImg")[0];
+        window.onresize = function () {
+            if (parseInt(document.documentElement.clientWidth) < 500) {
+                cooperImg.src = "../image/cooperMinImg.png";
             }
         }
-    
     }
 
 }())

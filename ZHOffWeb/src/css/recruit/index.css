@@ -1,6 +1,7 @@
 * {
     padding: 0px;
     margin: 0px;
+    font-family: MicrosoftYaHei;
 }
 
 body,
@@ -9,10 +10,15 @@ html {
     height: 100%;
 }
 
+header {
+    box-shadow: 0px 3px 7px 0px rgba(3, 3, 3, 0.04);
+}
+
 main {
     width: 100%;
-    height: 995px;
     background: #fff;
+    transform: translateZ(-1px);
+    margin-top: 2px;
 }
 
 main .header-cat {
@@ -24,12 +30,13 @@ main .footer-active {
 }
 
 main .map {
-    width: 1500px;
-    height: 995px;
+    width: 100%;
+    height: 855px;
     background: url("../../image/map.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
+    z-index: -1;
 }
 
 main .map .mapBox {
@@ -41,7 +48,6 @@ main .map .mapBox {
     display: flex;
     justify-content: center;
     line-height: 95px;
-    border: 1px dashed black;
     font-size: 24px;
     font-weight: 400;
     color: rgba(27, 46, 69, 1);
@@ -53,11 +59,13 @@ main .map .mapBox {
 
 main .map .contat {
     position: absolute;
-    /* right: -200px; */
-    right: 80px;
-    width: 600px;
-    height: 100%;
+    width: 942px;
+    height: 995px;
     text-align: right;
+    right: 0px;
+    padding-right: 40px;
+    box-sizing: border-box;
+    padding-right: 100px;
 }
 
 main .map .contat dl {
@@ -102,7 +110,7 @@ main .map .contat dl dd:nth-of-type(2) {
 
 main .map .contat dl dd:nth-of-type(3) {
     display: inline-block;
-    width: 496px;
+    width: 466px;
     height: 2px;
     background: rgba(131, 136, 151, 1);
     margin-top: 39px;
@@ -122,7 +130,9 @@ main .map .contat dl dd:nth-of-type(5) {
     color: rgba(131, 136, 151, 1);
     line-height: 25px;
 }
-
+footer{
+    margin-top: 0px !important;
+}
 /* 平板适配 */
 @media screen and (max-width: 1199px) {
     main .map {
@@ -144,7 +154,6 @@ main .map .contat dl dd:nth-of-type(5) {
         display: flex;
         justify-content: center;
         line-height: 95px;
-        border: 1px dashed black;
         font-size: 24px;
         font-weight: 400;
         color: rgba(27, 46, 69, 1);
@@ -231,6 +240,7 @@ main .map .contat dl dd:nth-of-type(5) {
         height: 900px;
         background: #fff;
     }
+
     main .header-cat {
         display: block;
         width: 100%;
@@ -277,7 +287,6 @@ main .map .contat dl dd:nth-of-type(5) {
         background-position-x: 0px;
         background-position-y: -10px;
         position: relative;
-        /* margin-top: 260px; */
     }
 
     main .map .mapBox {
@@ -289,12 +298,11 @@ main .map .contat dl dd:nth-of-type(5) {
         display: flex;
         justify-content: center;
         line-height: 35px;
-        border: 1px dashed black;
         font-size: 16px;
         font-weight: 400;
         color: rgba(27, 46, 69, 1);
         position: absolute;
-        top: 300px; 
+        top: 300px;
         left: 70%;
     }
 
@@ -309,22 +317,15 @@ main .map .contat dl dd:nth-of-type(5) {
         margin-top: 30px;
     }
 
+    main .footer-active dl dd {
+        white-space: normal;
+    }
+
     main .footer-active dl dd:nth-of-type(1) {
-        font-size: 24px;
+        font-size: 16px;
         font-weight: 400;
         color: rgba(131, 136, 152, 1);
         position: relative;
-    }
-
-    main .footer-active dl dd:nth-of-type(1)::after {
-        display: inline-block;
-        content: "";
-        position: absolute;
-        left: 45px;
-        bottom: -30px;
-        width: 298px;
-        height: 2px;
-        background: rgba(131, 136, 151, 1);
     }
 
     main .footer-active dl dd:nth-of-type(1)::before {
@@ -339,8 +340,7 @@ main .map .contat dl dd:nth-of-type(5) {
     }
 
     main .footer-active dl dd:nth-of-type(2) {
-        margin-top: 60px;
-        font-size: 24px;
+        font-size: 16px;
         font-weight: 400;
         color: rgba(131, 136, 152, 1);
     }
@@ -357,7 +357,7 @@ main .map .contat dl dd:nth-of-type(5) {
     }
 
     main .footer-active dl dd:nth-of-type(3) {
-        font-size: 24px;
+        font-size: 16px;
         font-weight: 400;
         color: rgba(131, 136, 152, 1);
     }
@@ -441,4 +441,21 @@ main .map .contat dl dd:nth-of-type(5) {
         background-repeat: no-repeat;
         margin-right: 21px;
     } */
+}
+
+@media screen and (max-width: 560px) {
+    main .footer-active dl dd:nth-of-type(1) {
+        font-size: 13px;
+        font-weight: 400;
+        color: rgba(131, 136, 152, 1);
+        position: relative;
+    }
+
+    main .footer-active dl dd:nth-of-type(2) {
+        font-size: 13px;
+    }
+
+    main .footer-active dl dd:nth-of-type(3) {
+        font-size: 13px;
+    }
 }
