@@ -1,0 +1,205 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+header {
+    width: 100%;
+    height: 86px;
+    background:rgba(255,255,255,1);
+    z-index: 999;
+}
+header .container {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .container .left_nav {
+    width: 320px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn{
+    /* position: absolute; */
+    /* right: -100px; */
+    display: none;
+}
+header .container .left_nav img {
+    width: 61px;
+    height: 61px;
+}
+header .container .left_nav .subsc {
+    width: 250px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 24px;
+    color: #666666;
+}
+header .container .left_nav .subsc p:nth-of-type(2) {
+    font-size: 11px;
+    font-weight: 200;
+    color: #666666;
+}
+header .container .right_nav{
+    width: 552px;
+    height: 100%;
+}
+header .container .right_nav ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header .container .right_nav ul li{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+header .container .right_nav ul li a{
+    font-size: 16px;
+    color: #838897;
+    
+}
+/* 在哪一层页面 */
+header .container .right_nav ul li.active a{
+    color: #1B2E45;
+}
+header .container .right_nav ul li.active::before{
+    content: "";
+    display: inline-block;
+    width: 63px;
+    height: 3px;
+    background:rgba(27,46,69,1);
+    position: absolute;
+    bottom: -23px;
+}
+@media screen and (max-width: 1199px){
+    header{
+        width: 100%;
+        height: 60px;
+        position: fixed;
+        top: 0px;
+        background: rgba(0, 0, 0,0.8);
+    }
+    header .container{
+        display: block;
+        width: 100%;
+    }
+    header .container .btn{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 36px;
+        height: 33px;
+        background: rgba(12, 13, 23);
+        border:1px solid #ccc;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        display: block;
+    }
+    header .container .right_nav ul li.active a{
+        color: red;
+    }
+    header .container .left_nav{
+        width: 100%;
+        height: 56px;
+        border: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header .container .left_nav img{
+        width: 40px;
+        height: 40px;
+        margin-left: 12px;
+    }
+  
+    header .container .left_nav .subsc{
+        display: none;
+    }
+    header .container .right_nav{
+        width: 100%;
+        height: 0px;
+        overflow: hidden;
+        background: rgb(49, 49, 49);
+        transition: height 0.3s linear;
+    }
+    header .container .right_nav ul {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    header .container .right_nav ul li{
+        width: 100%;
+        height: 40px;
+        text-align: left;
+        display: block;
+        border-bottom: 1px solid black;
+        background: rgb(49, 49,49);
+    }
+    header .container .right_nav ul li:nth-of-type(1){
+        border-top: 1px solid black;
+    }
+    header .container .right_nav ul li a{
+        color: #fff;
+        margin-left: 12px;
+        line-height: 40px;
+        font-size: 15px;
+        font-weight: 200;
+    }
+    header .container .right_nav ul li:nth-of-type(2) a{
+        color: #fff;
+    }
+    header .container .right_nav ul li::before{
+        content: "";
+        display: none;
+    }
+}
+@media screen and (max-width: 760px){
+    header{
+        width: 100%;
+        height: 60px;
+        position: fixed;
+        top: 0px;
+        background: rgba(0, 0, 0,0.8);
+    }
+    header .container{
+        display: block;
+        width: 100%;
+    }
+    header .container .btn{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 36px;
+        height: 33px;
+        background: rgba(12, 13, 23);
+        border:1px solid #ccc;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    header .container .right_nav ul li.active a{
+        color: red;
+    }
+}

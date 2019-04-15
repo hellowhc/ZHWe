@@ -1,0 +1,287 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+
+main {
+    width: 100%;
+}
+
+.main_img {
+    width: 100%;
+    height: 540px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.main_img img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    z-index: -1;
+}
+
+.main_img h1 {
+    width: 100%;
+    font-size: 83px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+}
+
+.main_img p {
+    width: 100%;
+    font-size: 48px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+}
+
+.joinInformation {
+    width: 1100px;
+    margin: 59px auto;
+    margin-bottom: 0px;
+}
+
+.joinInformation h1 {
+    width: 100%;
+    text-align: center;
+    height: 32px;
+    font-size: 32px;
+    font-weight: 400;
+    color: rgba(27, 46, 69, 1);
+}
+
+.joinInformation p {
+    width: 100%;
+    text-align: center;
+    height: 26px;
+    font-size: 24px;
+    font-weight: 400;
+    color: rgba(131, 136, 152, 1);
+    margin-top: 12px;
+}
+.joinInformation p:nth-of-type(2){
+    width: 100%;
+    margin-top: 28px;
+}
+.joinInformation dl:nth-of-type(1){
+    width: 100%;
+    margin-top: 66px;
+}
+.joinInformation dl {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 88px;
+}
+
+.joinInformation dl dt {
+    width: 80px;
+    height: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(255, 155, 0, 1);
+    line-height: 36px;
+}
+
+.joinInformation dl dt:nth-of-type(2) {
+    font-size: 16px;
+    color: #000;
+    margin-top: 8px;
+    margin-bottom: 21px;
+}
+
+.joinInformation dl dd {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(131, 136, 151, 1);
+    line-height: 25px;
+}
+
+@media screen and (max-width: 1199px) {
+    .main_img {
+        margin-top: 60px;
+        width: 100%;
+        /* height: 540px; */
+        /* height: 340px; */
+        height: 330px;
+        position: relative;
+        /* padding-bottom: 56%; */
+    }
+    .main_img img {
+        width: 100%;
+        height: 100%;
+    }
+    .main_img h1 {
+        font-size: 40px;
+        /* margin-top: 30px; */
+        /* margin-top: 43%; */
+    }
+    .main_img p {
+        font-size: 28px;
+        /* margin-top: 30px; */
+        /* margin-top: 40%; */
+    }
+    .joinInformation {
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .joinInformation h1 {
+        width: 100%;
+        text-align: center;
+        height: 32px;
+        font-size: 32px;
+        font-weight: 400;
+        color: rgba(27, 46, 69, 1);
+    }
+    
+    .joinInformation p {
+        width: 100%;
+        text-align: center;
+        height: 26px;
+        font-size: 20px;
+        font-weight: 400;
+        color: rgba(131, 136, 152, 1);
+        margin-top: 12px;
+    }
+    .joinInformation p:nth-of-type(2){
+        width: 100%;
+        margin-top: 28px;
+        /* text-indent: 38px; */
+    }
+    .joinInformation dl:nth-of-type(1){
+        margin-top: 68px;
+    }
+    .joinInformation dl {
+        display: inline-block;
+        width: 100%;
+        text-align: left;
+        margin-bottom: 60px;
+    }
+    
+    .joinInformation dl dt {
+        width: 80px;
+        height: 20px;
+        font-size: 20px;
+        font-weight: 400;
+        color: rgba(255, 155, 0, 1);
+        line-height: 36px;
+    }
+    
+    .joinInformation dl dt:nth-of-type(2) {
+        font-size: 16px;
+        color: #000;
+        margin-top: 8px;
+        margin-bottom: 21px;
+    }
+    
+    .joinInformation dl dd {
+        font-size: 16px;
+        font-weight: 400;
+        color: rgba(131, 136, 151, 1);
+        line-height: 25px;
+    }
+    
+}
+@media screen and (max-width: 760px) {
+    .main_img {
+        margin-top: 60px;
+        width: 100%;
+        height: 230px;
+        /* height: 0; */
+        position: relative;
+        /* padding-bottom: 56%; */
+    }
+    .main_img img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .main_img h1 {
+        font-size: 40px;
+        /* margin-top: 30px; */
+        /* margin-top: 40%; */
+    }
+    .main_img p {
+        font-size: 28px;
+        /* margin-top: 30px; */
+        /* margin-top: 40%; */
+    }
+    .joinInformation {
+        width: 100%;
+        margin: 28px auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .joinInformation h1 {
+        width: 100%;
+        text-align: center;
+        height: 32px;
+        font-size: 32px;
+        font-weight: 400;
+        color: rgba(27, 46, 69, 1);
+    }
+    
+    .joinInformation p {
+        width: 100%;
+        text-align: center;
+        height: 26px;
+        font-size: 20px;
+        font-weight: 400;
+        color: rgba(131, 136, 152, 1);
+        margin-top: 12px;
+    }
+    .joinInformation p:nth-of-type(2){
+        max-height: 200px;
+        height: 120px;
+        margin-top: 28px;
+        font-size: 17px;
+        text-indent: 38px;
+    }
+    .joinInformation dl:nth-of-type(1){
+        margin-top: 28px;
+    }
+    .joinInformation dl {
+        display: inline-block;
+        width: 100%;
+        text-align: left;
+        margin-bottom: 60px;
+    }
+    
+    .joinInformation dl dt {
+        width: 80px;
+        height: 20px;
+        font-size: 20px;
+        font-weight: 400;
+        color: rgba(255, 155, 0, 1);
+        line-height: 36px;
+    }
+    
+    .joinInformation dl dt:nth-of-type(2) {
+        font-size: 16px;
+        color: #000;
+        margin-top: 8px;
+        margin-bottom: 21px;
+    }
+    
+    .joinInformation dl dd {
+        font-size: 16px;
+        font-weight: 400;
+        color: rgba(131, 136, 151, 1);
+        line-height: 25px;
+        text-indent: 28px;
+    }
+    
+}
